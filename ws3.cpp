@@ -52,30 +52,21 @@ void PartA() {
 void PartB() {
     // Create a Rabbit pointer named r1 and set it equal to nullptr
     // Create another Rabbit pointer named r2 and set it equal to nullptr
-    Rabbit *r1 = nullptr;
-    Rabbit *r2 = nullptr;
 
     
     // Using new create a Rabbit by calling the default constructor and store the
     // pointer in r1
-    r1 = new Rabbit();
 
     // Using new create a Rabbit by calling the parameter constructor.
     // The initName should be "Bugs" and the weight should be 140
     // Store the pointer in r2
-    r2 = new Rabbit("Bugs", 140);
 
     // For the r1 pointer call readFromUser() and set the name to Flopsy
     // and the weight to 8
-    r1->readFromUser();
 
     // For both r1 and r2 call print()
-    r1->print();
-    r2->print();
 
     // delete both r1 and r2. 
-    delete r1;
-    delete r2;
 
     // Build the file and run it
     // make -f ws3.mak
